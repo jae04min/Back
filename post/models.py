@@ -8,5 +8,5 @@ class PostModel(models.Model):
     content = models.CharField(max_length=300, null=True)
     created_date = models.DateField(auto_now_add=True)
     updated_date = models.DateField(auto_now=True)
-    likes = models.SmallIntegerField(null=True, max_length=10)  
+    likes = models.SmallIntegerField(default=0)
     image = models.ImageField(default=None)
