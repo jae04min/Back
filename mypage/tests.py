@@ -1,2 +1,3 @@
 from django.test import TestCase
-from .models import Hospital
+
+# Create your tests here.

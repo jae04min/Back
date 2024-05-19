@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'knox',
     'post',
     'map',
+    'mypage',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +124,9 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+
+
+import os
 #이미지 업로드
 MEDIA_ROOT = BASE_DIR/'media'
 MEDIA_URL = '/media/'
