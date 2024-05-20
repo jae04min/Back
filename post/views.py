@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status, permissions
 from .models import PostModel
-from .serializers import PostSerializers
+from .serializers import PostSerializer
 
 '''
 class PostViewSet(viewsets.ModelViewSet):
@@ -31,4 +31,4 @@ class PostViewSet(viewsets.ModelViewSet):
 
 class PostViewSet(viewsets.ModelViewSet):
    queryset = PostModel.objects.all()
-   serializer_class = PostSerializers
+   serializer_class = PostSerializer

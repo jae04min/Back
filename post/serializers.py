@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import PostModel
 
 
-class PostSerializers(serializers.ModelSerializer):
+class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = PostModel
         fields = '__all__'
