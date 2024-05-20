@@ -1,4 +1,4 @@
-﻿CREATE TABLE `user` (
+CREATE TABLE `user` (
 	`id`	int	NOT NULL,
 	`nick_name`	varchar(20)	NOT NULL,
 	`password`	varchar(20)	NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE `Untitled2` (
 );
 
 CREATE TABLE `Untitled3` (
-	`x_val`	float	NOT NULL,
+	`x_val`	float	NOT NULL,
 	`y_val`	float	NOT NULL,
 	`place_name`	varchar(30)	NOT NULL,
 	`category`	varchar(10)	NOT NULL
@@ -45,3 +45,4 @@ ALTER TABLE `Untitled` ADD CONSTRAINT `PK_UNTITLED` PRIMARY KEY (
 ALTER TABLE `Untitled2` ADD CONSTRAINT `PK_UNTITLED2` PRIMARY KEY (
 	`pet_id`
 );
+
