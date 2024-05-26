@@ -11,7 +11,7 @@ class Pet(models.Model):
         ('C', '고양이'),
         ('O', '기타')
     ]
-
+    
     pet_id = models.BigAutoField(primary_key=True, null=False, editable=True)
     pet_name = models.CharField(max_length=30, null=False)
     pet_type = models.CharField(max_length=3, choices=PET_TYPE_CHOICES, default='강아지')
@@ -20,6 +20,3 @@ class Pet(models.Model):
 
     class Meta:
         db_table = 'mypage'
-
-
-## 수정 /mypage/pets/<pet_id>/

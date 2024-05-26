@@ -9,5 +9,4 @@ urlpatterns = [
     path("post/", include("post.urls")),
     path('user/', include('user.urls')),
     path('mypage/', include('mypage.urls')), 
-    # path("post/", include("post.urls")),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  #mypage에서 올리는 사진 URL경로 설정

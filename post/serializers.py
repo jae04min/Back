@@ -6,6 +6,3 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = PostModel
         fields = '__all__'
-
-        
-        
