@@ -20,6 +20,3 @@ class Pet(models.Model):
 
     class Meta:
         db_table = 'mypage'
-
-
-## 수정 /mypage/pets/<pet_id>/
