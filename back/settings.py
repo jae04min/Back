@@ -169,11 +169,11 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
 )
 
-REST_FRAMEWORK = { # 권한 설정
+'''REST_FRAMEWORK = { # 권한 설정
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
-}
+}'''
 
 AUTH_USER_MODEL = 'accounts.User'
 
