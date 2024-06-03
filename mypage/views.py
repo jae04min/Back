@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from .models import Pet
+from .form import PetForm
 from .serializers import PetSerializer
 
 class PetViewSet(viewsets.ModelViewSet):
