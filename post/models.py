@@ -1,5 +1,7 @@
 from django.db import models
 from django.db.models import Model
+from back import settings
+
 
 # Create your models here.
 class PostModel(models.Model):
@@ -10,4 +12,6 @@ class PostModel(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     likes = models.SmallIntegerField(default=0)
     image = models.ImageField(default=None)
+    type = models.CharField(max_length=10, null=False, editable=False, default=False)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=False)
     
