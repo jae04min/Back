@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['203.241.228.51', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
+    #"django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     #설치한 라이브러리
     'rest_framework',
-    'knox',
+    #'knox',
     'corsheaders',
     'rest_framework.authtoken',
     'dj_rest_auth',
@@ -172,7 +172,7 @@ CORS_ALLOW_HEADERS = (
 REST_FRAMEWORK = { # 권한 설정
     'DEFAULT_PERMISSION_CLASSES': [
         #'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-        'rest_framework.authentication.BasicAuthentication',
+        #'rest_framework.authentication.BasicAuthentication',
         
     ]
 }
